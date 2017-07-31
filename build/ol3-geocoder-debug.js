@@ -733,7 +733,7 @@ var Pelias = function Pelias() {
     url: '//search.mapzen.com/v1/search',
     params: {
       text: '',
-      key: '',
+      api_key: '',
       size: 10
     }
   };
@@ -744,7 +744,7 @@ Pelias.prototype.getParameters = function getParameters (options) {
     url: this.settings.url,
     params: {
       text: options.query,
-      key: options.key,
+      api_key: options.key,
       size: options.limit || this.settings.params.size
     }
   };
